@@ -1,5 +1,6 @@
 package com.maliha.stepdef;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,7 @@ public class flightReservation extends NewToursBase{
 	//WebDriver driver;
 
 	@When("^I enter my username and password$")
-	public void i_enter_my_username_and_password() {
+	public void i_enter_my_username_and_password() throws IOException {
 	
 	//	driver = new ChromeDriver();
 	//	driver.get("http://newtours.demoaut.com");

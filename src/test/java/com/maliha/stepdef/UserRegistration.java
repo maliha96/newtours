@@ -1,5 +1,7 @@
 package com.maliha.stepdef;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -16,7 +18,7 @@ public class UserRegistration extends NewToursBase {
 	
 	
 	@Given("^I am on the homepage$")
-	public void i_am_on_the_homepage() {
+	public void i_am_on_the_homepage() throws IOException {
 		
 		driver = getDriver();
 		driver.get("http://newtours.demoaut.com");
